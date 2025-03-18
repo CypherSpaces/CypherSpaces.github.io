@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>3月月记 - CypherSpaces</title>
+    <title>03-06 鲜花 - CypherSpaces</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="零的空间,3.16第二场湖南多校。
-开场写了一道树剖求 lca + 二分答案，然后就开始调一道平衡树优化 dp。
-但是这个平衡树要开 3 * 2e6 棵，于是我就写了个结构体，开了个 3 * 2e6 的数组，,"> 
+    <meta name="description" content="零的空间,又是回想起了曾经发生的一些事情，感觉闲话要写成回忆录了（
+这两天重新学习了一下 sam，一步一步模拟了一下流程，私以为已经完全懂了，所以想去找两道题做。
+在洛谷上搜了一下字符串题单，没想到搜出来了 ,"> 
     
     <link rel="alternative" href="atom.xml" title="CypherSpaces" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -20,20 +20,20 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="3月月记 - CypherSpaces"/>
-    <meta name="twitter:description" content="零的空间,3.16第二场湖南多校。
-开场写了一道树剖求 lca + 二分答案，然后就开始调一道平衡树优化 dp。
-但是这个平衡树要开 3 * 2e6 棵，于是我就写了个结构体，开了个 3 * 2e6 的数组，,"/>
+    <meta name="twitter:title" content="03-06 鲜花 - CypherSpaces"/>
+    <meta name="twitter:description" content="零的空间,又是回想起了曾经发生的一些事情，感觉闲话要写成回忆录了（
+这两天重新学习了一下 sam，一步一步模拟了一下流程，私以为已经完全懂了，所以想去找两道题做。
+在洛谷上搜了一下字符串题单，没想到搜出来了 ,"/>
     
     
     
     
     <meta property="og:site_name" content="CypherSpaces"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="3月月记 - CypherSpaces"/>
-    <meta property="og:description" content="零的空间,3.16第二场湖南多校。
-开场写了一道树剖求 lca + 二分答案，然后就开始调一道平衡树优化 dp。
-但是这个平衡树要开 3 * 2e6 棵，于是我就写了个结构体，开了个 3 * 2e6 的数组，,"/>
+    <meta property="og:title" content="03-06 鲜花 - CypherSpaces"/>
+    <meta property="og:description" content="零的空间,又是回想起了曾经发生的一些事情，感觉闲话要写成回忆录了（
+这两天重新学习了一下 sam，一步一步模拟了一下流程，私以为已经完全懂了，所以想去找两道题做。
+在洛谷上搜了一下字符串题单，没想到搜出来了 ,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -51,7 +51,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://cypherspaces.github.io"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">3月月记</h3>
+    <h3 class="subtitle">03-06 鲜花</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -66,42 +66,27 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">3月月记</h1>
+        <h1 class="title">03-06 鲜花</h1>
         <div class="stuff">
-            <span>四月 01, 2025</span>
+            <span>三月 06, 2025</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E9%97%B2%E8%AF%9D/" rel="tag">闲话</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h2 id="3-16"><a href="#3-16" class="headerlink" title="3.16"></a>3.16</h2><p>第二场湖南多校。</p>
-<p>开场写了一道树剖求 lca + 二分答案，然后就开始调一道平衡树优化 dp。</p>
-<p>但是这个平衡树要开 3 * 2e6 棵，于是我就写了个结构体，开了个 3 * 2e6 的数组，然后平衡树所有的数组都是 vector，这就是罪恶的开始……</p>
-<p>调了接近三个小时之后……MLE on 10，我把 vector 的 resize 再次缩小。</p>
-<p>然后 TLE on 38……真的绷不住了。</p>
-<p>结束之后发现确实是被卡常了，vector 常数还是太大，所以我把开 3 * 2e6 个平衡树改成了只开一个 rt[3 * 2e6]，然后就过了……</p>
-<h2 id="3-15"><a href="#3-15" class="headerlink" title="3.15"></a>3.15</h2><p>今天有点意思啊。</p>
-<p>清华致理书院在 cf 上建了一场比赛，秉持着中国人不熬中国人的原则，比赛时间从 13：00 开始，3 个小时，可以说是非常阳间了。</p>
-<p>但是一到 13：00，cf 就突然爆炸了，比赛不得不推迟了半个小时，所以我们又等了半个小时。</p>
-<p>到 13：30 的时候，cf 双爆炸了，比赛就又被延迟到了晚上 22：30，然后旁边 lmx 说群里已经有人把题目发出来了。</p>
-<p>实际情况是有的人进去了，大部分人卡了，所以题目就泄露了……</p>
-<p>于是本来我们打算鸽掉的 ucup 又重新提回日程，这个比赛是可以选时间的，我们报的 16：00 开始的。</p>
-<p>结果我点进比赛的一瞬间，点歪了一点，点到了取消报名，然后我又重新点了报名，就变成了报的 13：00 开始的那场了……</p>
-<p>真的很想吐槽一下它这个 UI 设计……</p>
-<p>总之最后就是打了两个小时，然后又手动补了三个小时。</p>
-<h2 id="3-9"><a href="#3-9" class="headerlink" title="3.9"></a>3.9</h2><p>今天是第一场湖南多校，是湖大出的题，然后连续开了几道不太可做的题。</p>
-<p>听 lmx 说 I 题可做，看了看，发现模拟即可，加了个卡时，结果 wa on 23。不太理解，本来以为是卡时的问题，调了一个小时发现是一个特判爆 long long 了，非常不好。</p>
-<p>然后看 J，是一道构造题，显然如果有一个偶数没有出现直接构造即可，找到了这个性质之后，剩下的也比较好构造了。</p>
-<p>最后一共过了 6 道，看起来还有一道计算几何比较可做，但是我们都不太擅长。</p>
-<h2 id="3-8"><a href="#3-8" class="headerlink" title="3.8"></a>3.8</h2><p>祝母上大人节日快乐。</p>
-<p>虽然是 23：55 发的，但也是今天对吧。</p>
-<h2 id="3-6"><a href="#3-6" class="headerlink" title="3.6"></a>3.6</h2><p>痛定思痛，感觉还是要多来机房训练。</p>
-<p>自己的代码能力还是有待提升啊，感觉是高中天天贺代码的报应来了，不知道什么时候可以做到把思路清晰的代码一遍写对。</p>
-<p>诶什么情况，就 3.6 了，我记得不是还 3.5 吗？</p>
-<h2 id="3-5"><a href="#3-5" class="headerlink" title="3.5"></a>3.5</h2><p>跟 gxd 和 lmx vp 了欧洲的一场不知道是什么的比赛，最后十分钟过了两道题，也是很不错了。</p>
-<h2 id="3-3"><a href="#3-3" class="headerlink" title="3.3"></a>3.3</h2><p>很有意思的一件事啊，本来要从四人组中被踢出去了，没想到 gxd 很想跟我组队，于是又被拉回来了。</p>
-<p>那么造成的影响是，本来都打算随便打打得了，现在开始要好好学了。</p>
+            <p>又是回想起了曾经发生的一些事情，感觉闲话要写成回忆录了（</p>
+<p>这两天重新学习了一下 sam，一步一步模拟了一下流程，私以为已经完全懂了，所以想去找两道题做。</p>
+<p>在洛谷上搜了一下字符串题单，没想到搜出来了 zzz 的题单，于是点进去看了看。</p>
+<p>随便找了道以前做过的题，熟练的点开提交记录想看一下是什么时候交的。emmm……是 22 年二月份。</p>
+<p>为什么是 22 年二月份呢？我也不知道，不过这个时候大概在二南集训吧。</p>
+<p>我的第一个 github 博客好像就是这个时候搭建的。</p>
+<p>又想起来当时第一次去二南集训，那也是第一次住校吧，之前都是走读，高中也是走读。</p>
+<p>然后第一天晚上就在宿舍跟同学打牌（当然扑克牌是同学带过来的），就被过来查寝的宿管阿姨没收了。</p>
+<p>阿姨走了之后，就在我们略显尴尬的时候，那个同学又从包里拿了一副扑克牌出来……</p>
+<p>当然后面我们就没有打牌了，因为我们都把电脑拿回宿舍了，阿姨只管打牌，不管玩电脑……</p>
+<p>还记得那会没有手机没有热点，所以只能玩一些单机小游戏，比如小骨，pvz什么的，啊那都是多久远以前的事了……</p>
+<p>总之呢，在二南集训的那段时间还是很快乐的，虽然可能有点小摆，但是记忆犹新啊。</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
